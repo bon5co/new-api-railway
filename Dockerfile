@@ -15,6 +15,14 @@ RUN apt-get update \
          curl postgresql-client python3 python3-bcrypt \
     && rm -rf /var/lib/apt/lists/*
 
+# Literals baked here rather than published as template variables: a literal
+# defaultValue is dropped at generate time and would publish as a blank required
+# field on the deploy form.
+ENV TZ=UTC \
+    ERROR_LOG_ENABLED=true \
+    BATCH_UPDATE_ENABLED=true \
+    NEW_API_ADMIN_USERNAME=admin
+
 COPY railway-entrypoint.sh /usr/local/bin/railway-entrypoint.sh
 RUN chmod +x /usr/local/bin/railway-entrypoint.sh
 
