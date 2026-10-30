@@ -1,5 +1,9 @@
 # new-api-railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/new-api-or-just-updated-llm-gateway-nobo?referralCode=Z1xivh&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
+**Deploy on Railway:** [New API template](https://railway.com/deploy/new-api-or-just-updated-llm-gateway-nobo?referralCode=Z1xivh&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
 Railway wrapper image for [New API](https://github.com/QuantumNous/new-api), the
 open-source multi-provider LLM gateway (OpenAI-compatible endpoint in front of many
 model providers, with keys, quotas, channels and usage logging).
